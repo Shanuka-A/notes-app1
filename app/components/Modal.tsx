@@ -12,7 +12,7 @@ const Modal: React.FC<ModalProps> = ({ modalOpen, setModalOpen, children }) => {
       <div className="modal-box relative">
 
         <div className="modal-action">
-          <label onClick={() => setModalOpen(false)} className="btn">x</label>
+          <label onClick={() => setModalOpen(false)} className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
           {children}
         </div>
       </div>

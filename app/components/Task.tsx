@@ -22,7 +22,6 @@ const Task: React.FC<TaskProp> = ({ task }) => {
       id: task.id,
       text: taskToEdit
     });
-    setTaskToEdit("");
     setOpenModalEdit(false)
     router.refresh();
 
@@ -31,7 +30,7 @@ const Task: React.FC<TaskProp> = ({ task }) => {
   const handleDeleteTask=async (id:string)=> {
     await deleteNote(id);
     setOpenModalDelete(false);
-    router.refresh
+    router.refresh();
   }
 
   return (

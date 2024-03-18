@@ -1,20 +1,8 @@
 {
   "tasks": [
     {
-      "id": "4",
-      "text": "go "
-    },
-    {
       "id": "5",
       "text": "learn math"
-    },
-    {
-      "id": "3",
-      "text": "shanuka"
-    },
-    {
-      "id": "3",
-      "text": "hello2"
     }
   ]
 }
