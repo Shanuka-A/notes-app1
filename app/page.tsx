@@ -8,8 +8,9 @@ export default async function Home() {
 
   return (
     <main className="max-w-4xl mx-auto mt-4">
-      <div className="text-center my-5 flex flex-col gap-4">
-        <h1 className="text-2xl font-bold">Notes App</h1>
+      <div className="text-center my-7 flex flex-col gap-4">
+        <h1 className="text-5xl font-bold">Notes Manager</h1>
+        <h2>Manage your daily NOTES</h2>
          <AddNote/>
       </div>
       <NoteList tasks={tasks}/>

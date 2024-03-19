@@ -12,11 +12,11 @@ const NoteList: React.FC<NoteListProps>=({tasks})=> {
     {/* head */}
     <thead>
       <tr>
-        <th>Topic</th>
-        <th>Your Note</th>
+        <th className="text-3xl">Your Note</th>
+        <th className="text-3xl">Choose</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody className="text-2xl">
       {tasks.map((task)=>(
         <Task key={task.id} task={task}/>
        ))}
