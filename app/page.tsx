@@ -2,6 +2,8 @@ import { getAllNotes } from "@/api";
 import AddNote from "./components/AddNote";
 import NoteList from "./components/NoteList";
 
+import RegisterPage from "./components/RegisterPage";
+
 export default async function Home() {
   const tasks = await getAllNotes();
   console.log(tasks);
@@ -14,6 +16,8 @@ export default async function Home() {
          <AddNote/>
       </div>
       <NoteList tasks={tasks}/>
+      
+      <RegisterPage/>
     </main>
   );
 }
